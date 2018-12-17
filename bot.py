@@ -95,7 +95,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    with open("Commands\\users.json", "r") as f:
+    with open("users.json", "r") as f:
         users = json.load(f)
 
         if message.author.bot:
@@ -108,7 +108,7 @@ async def on_message(message):
             await add_experience(users, message.author, number, message.server)
             await level_up(users, message.author, message.channel, message.server)
 
-        with open("Commands\\users.json", "w") as f:
+        with open("users.json", "w") as f:
             json.dump(users, f)
     await bot.process_commands(message)
 
