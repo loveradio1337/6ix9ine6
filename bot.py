@@ -1,8 +1,90 @@
 import discord
+
 from discord.ext import commands
+
+from discord.ext.commands import Bot
+
+import youtube_dl
+
+import random
+
+from os import environ
+
+import asyncio
+
+import time
+
+import random
+
+import datetime
+
+import math
+
+import requests
+
+
+import random
+
+
+import datetime
+
+import math
+
+import sys
+
+import base64
+
+import hashlib
+
+import traceback
+
+import string
+
+import inspect
+
 import json
+
+import aiohttp
+
+import websockets
+
+import urllib.request
+
+import logging
+
+from collections import Counter
+
+import os
+
+import colorsys
+
+import socket
+from os import environ
+from lxml import html
+import asyncio
 import time
 import random
+import datetime
+import math
+import requests
+import sys
+import base64
+import hashlib
+import traceback
+import string
+import inspect
+import json
+from cleverwrap import CleverWrap
+import config
+import utils
+import aiohttp
+import websockets
+from bs4 import BeautifulSoup
+import urllib.request
+import logging
+import colorsys
+import socket
+
 
 bot = commands.Bot(command_prefix='!')
 extensions = ['Commands.leaderboard']
@@ -62,4 +144,4 @@ if __name__ == '__main__':
     except Exception as error:
         print(error)
 
-bot.run('BOT_TOKEN')
+bot.run(os.environ['BOT_TOKEN'])
